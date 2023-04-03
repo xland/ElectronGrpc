@@ -40,6 +40,8 @@ let startServer = () => {
 };
 
 app.whenReady().then(() => {
+  //https://doc.qt.io/qt-6/qtwebsockets-index.html
+  //https://code.qt.io/cgit/qt/qtwebsockets.git/tree/examples/websockets/echoclient?h=6.4
   startMainWindow();
   startServer();
 });
