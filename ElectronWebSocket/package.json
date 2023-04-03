@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@grpc/grpc-js": "^1.8.12",
     "electron": "^21.3.1",
-    "esbuild": "^0.17.12"
+    "esbuild": "^0.17.12",
+    "ws": "^8.13.0"
   }
 }
