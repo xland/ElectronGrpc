@@ -1,5 +1,6 @@
 /NativeGrpc/.vs/
 /NativeGrpc/NativeGrpc/x64/
+/SubWindowAddon/build/
 # Logs
 logs
 *.log

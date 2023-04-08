@@ -20,6 +20,11 @@ let startMainWindow = () => {
   mainWindow = new BrowserWindow(config);
   mainWindow.webContents.openDevTools({ mode: "undocked" });
   mainWindow.loadURL(path.join(process.cwd(), "./index.html"));
+
+  // mainWindow.once('ready-to-show', () => {
+  //   let addon = require('D:\\project\\ElectronGrpc\\SubWindowAddon\\build\\Release\\native.node')
+  //   addon.createSubWindow(mainWindow.getNativeWindowHandle())
+  // })
 };
 
 let startServer = () => {

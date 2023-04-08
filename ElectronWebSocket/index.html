@@ -4,9 +4,14 @@
     <title>Electron test</title>
 </head>
 
-<body>
+<body style="background-color: rgb(188,166,216);">
+    <button id="attachBtn">Attach</button>
     <script>
-        console.log(1);
+        let btn = document.querySelector("#attachBtn")
+        btn.addEventListener("click",()=>{
+            let {ipcRenderer} = require("electron")
+            ipcRenderer.invoke("createChildWindow")
+        })
     </script>
 </body>
 
