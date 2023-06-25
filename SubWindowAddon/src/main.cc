@@ -4,9 +4,16 @@
 
 LRESULT CALLBACK wndProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam) {
     switch (msg) {
-    case WM_NCCALCSIZE: {
-        return 0;
-    }
+        case WM_NCCALCSIZE: {
+            return 0;
+        }
+        case WM_LBUTTONDOWN:{
+            MessageBox(hwnd,
+					"allen",
+					"allen",
+					MB_ICONWARNING | MB_OK);
+            return 0;
+        }
     }
     return DefWindowProcW(hwnd, msg, wparam, lparam);
 }
